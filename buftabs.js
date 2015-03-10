@@ -426,7 +426,7 @@ let buftabs = {
 
         // Set the correct highlight group
         if (tabs.index(null, true) == label.tabpos)
-            label.setAttributeNS(NS, 'highlight', 'BufTabSelected');
+            label.setAttributeNS(NS, 'highlight', 'BufTabSel');
         else {
             if (tabs.index(tabs.alternate, true) == label.tabpos)
                 label.setAttributeNS(NS, 'highlight', 'BufTabAlternate');
@@ -558,7 +558,7 @@ highlight.loadCSS(literal(function() /*
          padding:0 !important;
          overflow:hidden;
      }
-     BufTabSelected {
+     BufTabSel {
          background-repeat:no-repeat;
          background-size:contain, contain;
          background-position: 2px top;
