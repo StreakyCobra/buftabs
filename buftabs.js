@@ -151,6 +151,7 @@ let buftabs = {
 
         label.style.paddingLeft = '20px';
         label.style.backgroundImage = 'url("' + image + '")';
+        label.style.backgroundRepeat = 'no-repeat';
     },
 
     removeFavicon: function(arg) {
